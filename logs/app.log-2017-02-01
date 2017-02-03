@@ -1,0 +1,14 @@
+[01 02 2017 09:08:19.226] [DEBUG] - Inside get
+[01 02 2017 09:20:15.887] [DEBUG] - Inside user post
+[01 02 2017 09:28:49.061] [DEBUG] - Inside restaurant add post
+[01 02 2017 10:09:05.792] [DEBUG] - Inside restaurant add post
+[01 02 2017 10:09:32.418] [DEBUG] - Inside restaurant add post
+[01 02 2017 10:10:05.420] [DEBUG] - Inside get
+[01 02 2017 11:59:10.184] [DEBUG] - Inside restaurant add post
+[01 02 2017 12:02:12.220] [DEBUG] - Inside restaurant add post
+[01 02 2017 12:04:55.519] [DEBUG] - Inside restaurant add post
+[01 02 2017 12:04:55.545] [DEBUG] - Inside restaurant add post
+[01 02 2017 12:04:55.558] [DEBUG] - Inside restaurant add post
+[01 02 2017 12:05:28.352] [DEBUG] - Inside restaurant add post
+[01 02 2017 12:05:28.380] [DEBUG] - Inside restaurant update post
+[01 02 2017 12:05:28.389] [DEBUG] - Inside restaurant delete post

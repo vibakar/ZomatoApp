@@ -1,0 +1,103 @@
+[02 02 2017 09:21:29.048] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zynla
+[02 02 2017 09:35:39.413] [DEBUG] - Mongoose is now disconnected..!
+[02 02 2017 09:35:47.089] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 09:41:18.405] [DEBUG] - Mongoose is now disconnected..!
+[02 02 2017 09:41:25.752] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 09:48:38.757] [DEBUG] - Mongoose is now disconnected..!
+[02 02 2017 09:48:45.501] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 09:54:44.111] [DEBUG] - Mongoose is now disconnected..!
+[02 02 2017 09:54:55.975] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 09:58:24.481] [DEBUG] - Mongoose is now disconnected..!
+[02 02 2017 09:58:31.563] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 10:02:31.025] [DEBUG] - Mongoose is now disconnected..!
+[02 02 2017 10:02:37.898] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 10:05:22.430] [DEBUG] - Mongoose is now disconnected..!
+[02 02 2017 10:05:28.557] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 10:06:20.344] [DEBUG] - Mongoose is now disconnected..!
+[02 02 2017 10:06:26.303] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 10:06:35.826] [DEBUG] - Inside get
+[02 02 2017 10:07:20.317] [DEBUG] - Mongoose is now disconnected..!
+[02 02 2017 10:07:27.609] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 10:07:33.268] [DEBUG] - Inside user post
+[02 02 2017 10:09:12.513] [DEBUG] - Mongoose is now disconnected..!
+[02 02 2017 10:09:18.747] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 10:09:27.762] [DEBUG] - Inside user post
+[02 02 2017 10:09:36.503] [DEBUG] - Mongoose is now disconnected..!
+[02 02 2017 10:11:30.789] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 10:11:34.656] [DEBUG] - Inside user post
+[02 02 2017 10:12:20.167] [DEBUG] - Mongoose is now disconnected..!
+[02 02 2017 10:12:27.250] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 10:12:38.582] [DEBUG] - Inside user post
+[02 02 2017 10:46:12.299] [DEBUG] - Mongoose is now disconnected..!
+[02 02 2017 10:46:18.264] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 10:46:28.935] [DEBUG] - Mongoose is now disconnected..!
+[02 02 2017 10:46:34.990] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 10:48:26.111] [DEBUG] - Inside user post
+[02 02 2017 10:54:29.978] [DEBUG] - Mongoose is now disconnected..!
+[02 02 2017 10:54:38.237] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 10:56:48.024] [DEBUG] - Mongoose is now disconnected..!
+[02 02 2017 10:56:55.062] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 11:02:58.274] [DEBUG] - Mongoose is now disconnected..!
+[02 02 2017 11:03:05.098] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 11:05:38.117] [DEBUG] - Mongoose is now disconnected..!
+[02 02 2017 11:05:44.840] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 11:19:24.327] [DEBUG] - Inside user post
+[02 02 2017 11:19:45.149] [DEBUG] - Inside user post
+[02 02 2017 11:48:34.548] [DEBUG] - Mongoose is now disconnected..!
+[02 02 2017 11:48:42.169] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 11:48:48.466] [DEBUG] - Inside restaurant add post
+[02 02 2017 11:49:12.232] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 11:49:16.572] [DEBUG] - Inside restaurant add post
+[02 02 2017 11:50:40.316] [DEBUG] - Mongoose is now disconnected..!
+[02 02 2017 11:50:46.284] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 11:50:56.986] [DEBUG] - Inside restaurant add post
+[02 02 2017 12:00:00.027] [DEBUG] - Inside restaurant add post
+[02 02 2017 12:03:39.866] [DEBUG] - Mongoose is now disconnected..!
+[02 02 2017 12:03:46.072] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 12:04:00.824] [DEBUG] - Inside get
+[02 02 2017 12:08:26.286] [DEBUG] - Mongoose is now disconnected..!
+[02 02 2017 12:14:19.657] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 12:14:54.455] [DEBUG] - Inside get
+[02 02 2017 12:17:25.411] [DEBUG] - Inside restaurant delete post
+[02 02 2017 12:17:49.050] [DEBUG] - Inside get
+[02 02 2017 12:20:24.072] [DEBUG] - Mongoose is now disconnected..!
+[02 02 2017 12:20:30.063] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 12:20:43.305] [DEBUG] - Mongoose is now disconnected..!
+[02 02 2017 12:20:49.014] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 12:21:36.371] [DEBUG] - Inside restaurant update post
+[02 02 2017 12:22:01.647] [DEBUG] - Inside get
+[02 02 2017 12:24:11.425] [DEBUG] - Mongoose is now disconnected..!
+[02 02 2017 12:24:17.409] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 12:27:50.895] [DEBUG] - Inside restaurant update post
+[02 02 2017 12:29:08.323] [DEBUG] - Mongoose is now disconnected..!
+[02 02 2017 12:29:14.432] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 12:34:10.801] [DEBUG] - Inside restaurant update post
+[02 02 2017 12:34:18.719] [DEBUG] - Inside restaurant update post
+[02 02 2017 12:34:39.543] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 12:34:52.462] [DEBUG] - Inside restaurant update post
+[02 02 2017 12:35:08.168] [DEBUG] - Mongoose is now disconnected..!
+[02 02 2017 12:35:13.792] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 12:35:34.520] [DEBUG] - Inside restaurant update post
+[02 02 2017 12:35:52.098] [DEBUG] - Inside restaurant update post
+[02 02 2017 12:36:05.050] [DEBUG] - Inside restaurant update post
+[02 02 2017 12:36:21.975] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 12:36:28.657] [DEBUG] - Inside restaurant update post
+[02 02 2017 12:37:25.625] [DEBUG] - Inside restaurant update post
+[02 02 2017 12:37:56.200] [DEBUG] - Mongoose is now disconnected..!
+[02 02 2017 12:38:02.170] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 12:38:28.220] [DEBUG] - Inside restaurant update post
+[02 02 2017 12:39:18.093] [DEBUG] - Mongoose is now disconnected..!
+[02 02 2017 12:39:23.775] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 12:39:29.419] [DEBUG] - Inside restaurant update post
+[02 02 2017 12:39:37.375] [DEBUG] - Inside restaurant update post
+[02 02 2017 12:39:48.841] [DEBUG] - Inside restaurant update post
+[02 02 2017 12:40:09.381] [DEBUG] - Mongoose is now disconnected..!
+[02 02 2017 12:40:16.111] [DEBUG] - Mongoose is now connected to  mongodb://127.0.0.1:27017/zomatoDB
+[02 02 2017 12:40:18.765] [DEBUG] - Inside restaurant update post
+[02 02 2017 15:47:39.413] [DEBUG] - Inside get
+[02 02 2017 15:48:06.496] [DEBUG] - Inside restaurant delete post
+[02 02 2017 15:48:23.515] [DEBUG] - Inside get
+[02 02 2017 15:49:33.891] [DEBUG] - Inside restaurant add post
+[02 02 2017 15:49:45.750] [DEBUG] - Inside get
+[02 02 2017 15:50:27.570] [DEBUG] - Inside restaurant update post
+[02 02 2017 15:50:40.240] [DEBUG] - Inside get
