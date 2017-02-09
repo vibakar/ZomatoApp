@@ -62,7 +62,7 @@ it('should not add new Users',(done)=>{
 });
 
 it('should update Users by Id',(done)=>{
-      var UsersMock = sinon.mock(new Users({password:'virat'}));
+      var UsersMock = sinon.mock(new Users({resId:5}));
       var user = UsersMock.object;
       var expectedResult = {status: true};
       UsersMock.expects('save').yields(null, expectedResult);
@@ -75,7 +75,7 @@ it('should update Users by Id',(done)=>{
 });
 
 it('should not update Users by Id',(done)=>{
-      var UsersMock = sinon.mock(new Users({password:'virat'}));
+      var UsersMock = sinon.mock(new Users({resId:5}));
       var user = UsersMock.object;
       var expectedResult = {status: false};
       UsersMock.expects('save').yields(expectedResult, null);

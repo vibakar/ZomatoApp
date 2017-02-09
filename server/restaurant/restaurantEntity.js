@@ -2,9 +2,21 @@ var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
 var schema = new mongoose.Schema({
-  resId : Number,
-  resLoc : String,
-  resCusine : String
+  resId : {
+    type: Number,
+    required: true,
+    trim: true
+  },
+  resLoc : {
+    type: String,
+    required: true,
+    trim: true
+  },
+  resCusine : {
+    type: String,
+    required: true,
+    trim: true
+  }
 });
 
 var Restaurant = mongoose.model('restaurant',schema);
