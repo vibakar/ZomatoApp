@@ -24,7 +24,7 @@ class Favourites extends React.Component{
   render(){
     return (
       <div>
-        <DisplayFavComponent json={this.state.json} />
+        <DisplayFavComponent fav='favourites' json={this.state.json} />
       </div>
     );
   }

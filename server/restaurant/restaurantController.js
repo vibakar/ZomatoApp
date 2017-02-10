@@ -6,6 +6,7 @@ var restaurantController = {
 addRestaurant : function(req, res) {
     logger.debug("Inside restaurant add post");
     var newRestaurant = new Restaurant({
+      resid:req.body.resid,
       name:req.body.name,
       address:req.body.address,
       cuisines:req.body.cuisines,

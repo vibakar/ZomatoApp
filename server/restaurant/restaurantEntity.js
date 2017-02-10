@@ -2,16 +2,21 @@ var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
 var schema = new mongoose.Schema({
+  resid: {
+    type: Number,
+    required: true,
+    trim: true
+  },
   name : {
     type: String,
     required: true,
     trim: true,
-    unique: true
   },
   address : {
     type: String,
     required: true,
-    trim: true
+    trim: true,
+    unique: true
   },
   cuisines : {
     type: String,

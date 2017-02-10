@@ -12,13 +12,16 @@ class DisplayFavComponent  extends React.Component{
     var divStyle = {
       margin: 70
     };
-
+    var fav = this.props.fav;
     var JsonArray = this.props.json.map(function(item){
-      return <CardsComponent name={item.name}
-         image={item.image}
-         address={item.address}
-         cuisines={item.cuisines}
-         ratings={item.ratings}/>
+      if(fav == 'favourites'){
+        return <CardsComponent id={item._id} name={item.name}
+           image={item.image}
+           address={item.address}
+           cuisines={item.cuisines}
+           ratings={item.ratings} fav='favourites'/>
+      }
+
     });
     return (
         <div style={divStyle}><Card.Group>{JsonArray}</Card.Group></div>
