@@ -1,4 +1,5 @@
 import React from 'react';
+import ButtonComponent from './button.jsx';
 import { Card, Icon, Image, Button } from 'semantic-ui-react';
 
 var textBoxStyle = {
@@ -18,9 +19,23 @@ var inputStyle = {
 class CardsComponent extends React.Component {
     constructor() {
         super();
+        this.state = {buttonName: 'Add To Favourites',colorName:'green'};
     }
-    onClick(){
-      alert('Added to favourites')
+    whenClick(){
+      $.ajax({
+          type: 'POST',
+          url: '/restaurant/add',
+          data: {
+              'name': this.props.name,
+              'address': this.props.address,
+              'cuisines': this.props.cuisines,
+              'ratings':this.props.ratings,
+              'image':this.props.image
+          },
+          success: function(msg){
+              this.setState({buttonName:'Added to Your Favourites',colorName:'red'});
+          }.bind(this)
+      });
     }
     render() {
         return (
@@ -42,7 +57,7 @@ class CardsComponent extends React.Component {
               <Card.Content extra>
                    <span style={textStyle}>Ratings :</span><span style={inputStyle}>{this.props.ratings}/5</span>
               </Card.Content>
-              <Button onClick={this.onClick} size='large' color='green' ><Icon name='heart'></Icon>Add To Favourities</Button>
+              <ButtonComponent  click={this.whenClick.bind(this)} size='large' color={this.state.colorName || 'green'} name='heart' button={this.state.buttonName}/>
             </Card>
         );
     }

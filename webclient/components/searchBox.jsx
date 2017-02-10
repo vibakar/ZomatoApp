@@ -30,7 +30,7 @@ class SearchComponent extends React.Component {
 
     render() {
       var divStyle = {
-        marginTop :50,
+        marginTop :0,
         marginLeft:'400px'
       }
       var inputStyle = {

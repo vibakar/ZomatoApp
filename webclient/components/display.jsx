@@ -1,17 +1,21 @@
 import React from 'react';
 import CardsComponent from './cards.jsx';
-import { Card } from 'semantic-ui-react';
+import { Card, Button } from 'semantic-ui-react';
+import ButtonComponent from './button.jsx';
 
 class DisplayComponent  extends React.Component{
 
   constructor(){
     super();
   }
+  whenClick(){
+    alert('button clicked');
+  }
   render(){
 
     var divStyle = {
       margin: 70
-    }
+    };
 
     var JsonArray = this.props.json.map(function(item){
       return <CardsComponent name={item.restaurant.name}
