@@ -7,7 +7,7 @@ class ButtonComponent extends React.Component{
   }
   render(){
     return(
-      <Button onClick={this.props.click} size={this.props.size} color={this.props.color} ><Icon name={this.props.name}></Icon>{this.props.button}</Button>
+      <Button floated='right' onClick={this.props.click} size={this.props.size} color={this.props.color} ><Icon name={this.props.name}></Icon>{this.props.button}</Button>
     );
   }
 }

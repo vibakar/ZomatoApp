@@ -35,6 +35,7 @@ var schema = new mongoose.Schema({
   },
   comments: {
     type: String,
+    trim:true
   }
 });
 
