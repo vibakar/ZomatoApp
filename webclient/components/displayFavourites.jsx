@@ -19,7 +19,9 @@ class DisplayFavComponent  extends React.Component{
            image={item.image}
            address={item.address}
            cuisines={item.cuisines}
-           ratings={item.ratings} fav='favourites'/>
+           ratings={item.ratings}
+           comments={item.comments}
+           fav='favourites'/>
       }
 
     });

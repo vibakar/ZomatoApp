@@ -11,7 +11,8 @@ addRestaurant : function(req, res) {
       address:req.body.address,
       cuisines:req.body.cuisines,
       ratings:req.body.ratings,
-      image:req.body.image
+      image:req.body.image,
+      comments:req.body.comments || 'Add Comments'
     });
 
     newRestaurant.save().then((doc)=>{
@@ -24,7 +25,7 @@ addRestaurant : function(req, res) {
 updateRestaurant : function(req, res) {
     logger.debug("Inside restaurant update post");
     var id = req.params.id;
-    Restaurant.findByIdAndUpdate(id,{$set:{resLoc:req.body.resLoc}},{new:true}).then((doc)=>{
+    Restaurant.findByIdAndUpdate(id,{$set:{comments:req.body.comments}},{new:true}).then((doc)=>{
       res.send(doc);
     },(err)=>{
       res.send(err);

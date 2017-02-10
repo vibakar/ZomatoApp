@@ -19,7 +19,8 @@ var inputStyle = {
 class CardsComponent extends React.Component {
     constructor() {
         super();
-        this.state = {addButton: 'Add To Favourites',deleteButton:'Delete',updateButton:'Edit'};
+        this.state = {comments:'',addButton: 'Add To Favourites',deleteButton:'Delete',updateButton:'Update Comments',
+                      deleteColor:'green',updateColor:'blue'};
     }
     addFavourites(){
       $.ajax({
@@ -47,11 +48,27 @@ class CardsComponent extends React.Component {
           url: `/restaurant/delete/${id}`,
           success: function(msg){
             console.log('success',msg);
-              this.setState({deleteButton:'Deleted',colorName:'red'});
+              this.setState({deleteButton:'Deleted',deleteColor:'red'});
           }.bind(this)
       });
     }
-
+    updateFavourites(){
+      var comments = this.state.comments;
+      var id = this.props.id;
+      $.ajax({
+          type: 'PUT',
+          url: `/restaurant/update/${id}`,
+          data : {
+              'comments': comments
+          },
+          success: function(msg){
+              this.setState({updateButton:'Updated',updateColor:'orange'});
+          }.bind(this)
+      });
+    }
+    getComments(e){
+      this.setState({comments:e.target.value});
+    }
     render() {
       var fav = this.props.fav;
       var del = "";
@@ -61,14 +78,13 @@ class CardsComponent extends React.Component {
       if(find=='search'){
         add =
             <ButtonComponent  click={this.addFavourites.bind(this)} size='large' color={this.state.colorName || 'green'} name='heart' button={this.state.addButton}/>;
-
         }
       if(fav=='favourites'){
         del = (<div>
-            <Input type='text' placeholder='Comments' />
-            <ButtonComponent  size='small' color={this.state.colorName || 'blue' } button='Edit'/>
-            <ButtonComponent  click={this.deleteFavourites.bind(this)} size='large' color={this.state.colorName || 'green' } button={this.state.deleteButton}/>
-            </div>)
+            <Input type='text' onChange={this.getComments.bind(this)} placeholder={this.props.comments} value={this.state.comments}/>
+            <ButtonComponent click={this.updateFavourites.bind(this)} size='small' color={this.state.updateColor || 'blue' } button={this.state.updateButton}/>
+            <ButtonComponent  click={this.deleteFavourites.bind(this)} size='small' color={this.state.deleteColor || 'green' } button={this.state.deleteButton}/>
+          </div>)
       }
 
         return (
