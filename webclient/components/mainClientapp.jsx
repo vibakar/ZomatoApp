@@ -6,7 +6,7 @@ import DisplayComponent from './display.jsx';
 class MainComponent extends React.Component {
     constructor() {
         super();
-        this.state = {json: []};
+        this.state = {json: [],button:'',color:'',icon:''};
     }
     getCityId(cityId,cuisine){
       $.ajax({
@@ -36,7 +36,7 @@ class MainComponent extends React.Component {
             },
             success: function(data){
               console.log('Successfully got JSON from Zomato' + data);
-              this.setState({json: data.restaurants});
+              this.setState({json: data.restaurants,button:'Search',color:'green',icon:'search'});
             }.bind(this),
             error: function(err){
               console.log('error occurred on AJAX');
@@ -48,7 +48,7 @@ class MainComponent extends React.Component {
     render() {
         return (
           <div>
-            <SearchComponent callAjaxCity={this.getCityId.bind(this)} />
+            <SearchComponent button={this.state.button} icon={this.state.icon} color={this.state.color} callAjaxCity={this.getCityId.bind(this)} />
             <DisplayComponent json={this.state.json} />
           </div>
         );

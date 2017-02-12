@@ -5,7 +5,8 @@ var schema = new mongoose.Schema({
   resid: {
     type: Number,
     required: true,
-    trim: true
+    trim: true,
+    unique: true
   },
   name : {
     type: String,
@@ -16,7 +17,6 @@ var schema = new mongoose.Schema({
     type: String,
     required: true,
     trim: true,
-    unique: true
   },
   cuisines : {
     type: String,

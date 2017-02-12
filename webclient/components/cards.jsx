@@ -19,7 +19,7 @@ var inputStyle = {
 class CardsComponent extends React.Component {
     constructor() {
         super();
-        this.state = {comments:'',addButton: 'Add To Favourites',deleteButton:'Delete',updateButton:'Edit',
+        this.state = {icon:'',comments:'',addButton: 'Add To Favourites',deleteButton:'Delete',updateButton:'Edit',
                       deleteColor:'teal',updateColor:'blue'};
     }
 
@@ -42,7 +42,6 @@ class CardsComponent extends React.Component {
       });
     }
     deleteFavourites(){
-
       var id = this.props.id;
       console.log('deleted id',id);
       $.ajax({
@@ -50,7 +49,6 @@ class CardsComponent extends React.Component {
           url: `/restaurant/delete/${id}`,
           success: function(msg){
             console.log('success',msg);
-              // this.setState({deleteButton:'Deleted',deleteColor:'red'});
               this.props.removeFav(id);
           }.bind(this)
       });
@@ -65,7 +63,8 @@ class CardsComponent extends React.Component {
               'comments': comments
           },
           success: function(msg){
-              this.setState({updateButton:'Edited',updateColor:'orange'});
+              this.setState({updateButton:'Done',updateColor:'grey',icon:'like outline'});
+              console.log('done editing');
           }.bind(this)
       });
     }
@@ -73,20 +72,18 @@ class CardsComponent extends React.Component {
       this.setState({comments:e.target.value});
     }
     render() {
-      var fav = this.props.fav;
-      var del = "";
       var find =this.props.search;
       var add ='';
-      var textBox = '';
+      var del = '';
       if(find=='search'){
         add =  <ButtonComponent  click={this.addFavourites.bind(this)} size='large' color={this.state.colorName || 'green'} name='heart' button={this.state.addButton}/>;
         }
-      if(fav=='favourites'){
+      else{
         del = (<div>
             <Input fluid type='text' onChange={this.getComments.bind(this)} placeholder={this.props.comments} value={this.state.comments} />
             <div className='ui two buttons'>
-                <ButtonComponent click={this.updateFavourites.bind(this)} size='small' color={this.state.updateColor || 'blue' } button={this.state.updateButton}/>
-                <ButtonComponent click={this.deleteFavourites.bind(this)} size='small' color={this.state.deleteColor || 'white' } button={this.state.deleteButton}/>
+                <ButtonComponent click={this.updateFavourites.bind(this)} size='small' color={this.state.updateColor || 'blue' } button={this.state.updateButton} name={this.state.icon || 'edit'}/>
+                <ButtonComponent click={this.deleteFavourites.bind(this)} size='small' color={this.state.deleteColor || 'white' } button={this.state.deleteButton} name='dislike outline'/>
             </div>
           </div>)
       }
