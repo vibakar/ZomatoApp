@@ -13,6 +13,7 @@ class DisplayFavComponent  extends React.Component{
       margin: 70
     };
     var fav = this.props.fav;
+    var removeFav = this.props.removeFav;
     var JsonArray = this.props.json.map(function(item){
       if(fav == 'favourites'){
         return <CardsComponent id={item._id} name={item.name}
@@ -21,7 +22,9 @@ class DisplayFavComponent  extends React.Component{
            cuisines={item.cuisines}
            ratings={item.ratings}
            comments={item.comments}
-           fav='favourites'/>
+           fav='favourites'
+           removeFav={removeFav}
+          />
       }
 
     });

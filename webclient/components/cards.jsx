@@ -20,8 +20,9 @@ class CardsComponent extends React.Component {
     constructor() {
         super();
         this.state = {comments:'',addButton: 'Add To Favourites',deleteButton:'Delete',updateButton:'Edit',
-                      deleteColor:'white',updateColor:'blue'};
+                      deleteColor:'teal',updateColor:'blue'};
     }
+
     addFavourites(){
       $.ajax({
           type: 'POST',
@@ -41,14 +42,16 @@ class CardsComponent extends React.Component {
       });
     }
     deleteFavourites(){
+
       var id = this.props.id;
-      console.log(id);
+      console.log('deleted id',id);
       $.ajax({
           type: 'DELETE',
           url: `/restaurant/delete/${id}`,
           success: function(msg){
             console.log('success',msg);
-              this.setState({deleteButton:'Deleted',deleteColor:'red'});
+              // this.setState({deleteButton:'Deleted',deleteColor:'red'});
+              this.props.removeFav(id);
           }.bind(this)
       });
     }
@@ -109,7 +112,6 @@ class CardsComponent extends React.Component {
                    <span style={textStyle}>Ratings :</span><span style={inputStyle}>{this.props.ratings}/5</span>
               </Card.Content>
               {add}
-              {textBox}
               {del}
             </Card>
         );
