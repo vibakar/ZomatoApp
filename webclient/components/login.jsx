@@ -1,10 +1,25 @@
 var React = require('react');
 var {browserHistory} = require('react-router');
+import { Card, Icon, Image, Input, Button } from 'semantic-ui-react';
 
+var divStyle = {
+  marginLeft: '38%',
+  background: '#c2c2a3'
+};
+var centerStyle = {
+  marginTop:'5%',
+  marginLeft:'33%',
+  color:'white'
+};
+var headerStyle = {
+  marginTop:'5%',
+  marginLeft:'33%',
+  color:'green'
+};
 class Login extends React.Component {
     constructor() {
         super();
-        this.state={username:'',password:'', isLoggedIn:''};
+        this.state={username:'',password:''};
     }
 
 handleUserName(e)
@@ -35,17 +50,22 @@ LoginUser(){
  });
 }
  render(){
-   return(
-   <div className="Login">
-        <h2 className="text-center">Login</h2>
-        <div className="form-group">
-        <input className="form-control" onChange={this.handleUserName.bind(this)}  placeholder="Enter User Name"  type="text" />
-        </div>
-        <div className="form-group">
-        <input className="form-control" onChange={this.handlePassword.bind(this)}  placeholder="Enter Password"  type="password" />
-        </div>
-        <input className="btn btn-primary btn-block" onClick={this.LoginUser.bind(this)} type="submit" value="Login" />
-   </div>);
+   return(<div>
+     <h2 style={headerStyle}>Login to Find the best restaurants in your favourite City</h2>
+     <Card style={divStyle}>
+        <h1 style={centerStyle}>Login</h1>
+        <Card.Content >
+               <Input  onChange={this.handleUserName.bind(this)}  placeholder="Enter User Name"  type="text" autoFocus  />
+        </Card.Content>
+        <Card.Content>
+               <Input onChange={this.handlePassword.bind(this)}  placeholder="Enter Password"  type="password" />
+        </Card.Content>
+        <Card.Content>
+          <Button size='large' color='pink' onClick={this.LoginUser.bind(this)} >Login</Button>
+        </Card.Content>
+
+    </Card>
+  </div>);
  }
 }
 

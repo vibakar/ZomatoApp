@@ -9,7 +9,20 @@ class MenuExamplePointing extends Component {
     };
 
     handleItemClick = (e, {name}) => this.setState({activeItem: name})
+    onClick(){
 
+      $.ajax({
+          url: '/users/logout',
+          type: 'GET',
+          success: function(data) {
+            if (typeof data.redirect == 'string')
+             window.location.replace(window.location.protocol + "//" + window.location.host + data.redirect);
+          }.bind(this),
+          error: function(err) {
+              console.log('error in logout'+err);
+          }.bind(this)
+      });
+    }
     render() {
         const {activeItem} = this.state
 
@@ -24,7 +37,7 @@ class MenuExamplePointing extends Component {
                     </Link>
                     <Menu.Menu position='right'>
                         <Menu.Item>
-                            <Button size='large' color='red'>Logout</Button>
+                            <Button onClick={this.onClick.bind(this)} size='large' color='green'>Logout</Button>
                         </Menu.Item>
                     </Menu.Menu>
                 </Menu>

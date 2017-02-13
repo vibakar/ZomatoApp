@@ -45,13 +45,13 @@ var userController = {
     },
 
     login: function(req, res) {
-        console.log('inside login');
        res.json({responseText:'authenticated'});
     },
 
     logout: function(req, res){
       console.log('Session deleted');
       req.session.destroy();
+      res.send({redirect: '/'});
     }
 };
 

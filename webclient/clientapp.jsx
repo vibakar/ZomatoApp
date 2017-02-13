@@ -18,9 +18,9 @@ var MainComp = React.createClass({
 })
 ReactDOM.render(
     <Router history={browserHistory}>
-    <Route path="/" component={MainComp}>
-        <IndexRoute component={login}/>
-        <Route path='/home' component={Home}/>
-        <Route path="/favourites" component={Favourites}/>
-    </Route>
-</Router>, document.getElementById('mountapp'));
+      <Route path='/' component={login}/>
+      <Route component={MainComp}>
+          <Route path='/home' component={Home}/>
+          <Route path="/favourites" component={Favourites}/>
+      </Route>
+    </Router>, document.getElementById('mountapp'));
